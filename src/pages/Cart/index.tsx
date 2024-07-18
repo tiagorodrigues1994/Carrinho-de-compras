@@ -26,7 +26,7 @@ const {cart, total, removeItemCart, addItemCart} =useContext(CartContext);
             <img
                             className="w-28 "
                             src={item.cover} alt={item.title} />
-                            <strong>{item.price}</strong>
+                            <strong>Preço: {item.price}</strong>
                             <div className="flex items-center justify-center gap-3">
                                 <button
                                 onClick={(() => removeItemCart(item))}
